@@ -1,0 +1,168 @@
+{
+  "_about": "Chord-symbol → sixth/diminished pair conversions, all rooted on C. Pitch classes: C=0. 'scaleOverRoot' lists the rail's 8 notes as semitones above the chord root. Reconciled from the owner's study sources; verified by computation.",
+  "conversions": [
+    {
+      "symbol": "Cmaj7 / C6",
+      "options": [
+        {
+          "pair": { "kind": "major6", "chordChord": "C6", "chordSet": [0, 4, 7, 9], "dimChord": "B°7", "dimSet": [11, 2, 5, 8] },
+          "bass": 0,
+          "littleChord": "C6",
+          "implied": "C6 / Cmaj7",
+          "scaleOverRoot": [0, 2, 4, 5, 7, 8, 9, 11],
+          "chordScale": "C major bebop (Ionian + ♯5 passing); dimSet = rootless G7♭9"
+        },
+        {
+          "pair": { "kind": "major6", "chordChord": "G6", "chordSet": [7, 11, 2, 4], "dimChord": "F♯°7", "dimSet": [6, 9, 0, 3] },
+          "bass": 0,
+          "littleChord": "G6",
+          "implied": "Cmaj9",
+          "scaleOverRoot": [0, 2, 3, 4, 6, 7, 9, 11],
+          "chordScale": "G major bebop over C ≈ C Lydian color (♯11 in dimSet)"
+        },
+        {
+          "pair": { "kind": "minor6", "chordChord": "Am6", "chordSet": [9, 0, 4, 6], "dimChord": "B°7", "dimSet": [11, 2, 5, 8] },
+          "bass": 0,
+          "littleChord": "Am6",
+          "implied": "C6(♯11)",
+          "scaleOverRoot": [0, 2, 4, 5, 6, 8, 9, 11],
+          "chordScale": "A melodic minor over C = C Lydian augmented color"
+        }
+      ]
+    },
+    {
+      "symbol": "Cm6 (tonic minor)",
+      "options": [
+        {
+          "pair": { "kind": "minor6", "chordChord": "Cm6", "chordSet": [0, 3, 7, 9], "dimChord": "B°7", "dimSet": [11, 2, 5, 8] },
+          "bass": 0,
+          "littleChord": "Cm6",
+          "implied": "Cm6 / Cm(maj9) via borrowing",
+          "scaleOverRoot": [0, 2, 3, 5, 7, 8, 9, 11],
+          "chordScale": "C melodic minor bebop; dimSet = rootless G7♭9"
+        }
+      ]
+    },
+    {
+      "symbol": "Cm7",
+      "options": [
+        {
+          "pair": { "kind": "major6", "chordChord": "E♭6", "chordSet": [3, 7, 10, 0], "dimChord": "D°7", "dimSet": [2, 5, 8, 11] },
+          "bass": 0,
+          "littleChord": "E♭6",
+          "implied": "Cm7 / Cm9 via borrowing",
+          "scaleOverRoot": [0, 2, 3, 5, 7, 8, 10, 11],
+          "chordScale": "E♭ major bebop over C; identity: Cm7 = E♭6 third inversion. dimSet supplies 9 and 11; A♭/B are borrowed chromatic color",
+          "note": "Chord-scale habit says Dorian; this rail is closer to Aeolian + leading tone. Both are honest — flag in UI."
+        }
+      ]
+    },
+    {
+      "symbol": "Cm7♭5",
+      "options": [
+        {
+          "pair": { "kind": "minor6", "chordChord": "E♭m6", "chordSet": [3, 6, 10, 0], "dimChord": "D°7", "dimSet": [2, 5, 8, 11] },
+          "bass": 0,
+          "littleChord": "E♭m6",
+          "implied": "Cm7♭5 / Cm9♭5 via borrowing",
+          "scaleOverRoot": [0, 2, 3, 5, 6, 8, 10, 11],
+          "chordScale": "E♭ melodic minor over C = C Locrian ♮2 (+ leading tone); identity: Cm7♭5 = E♭m6 third inversion"
+        }
+      ]
+    },
+    {
+      "symbol": "C7 (natural tensions)",
+      "options": [
+        {
+          "pair": { "kind": "minor6", "chordChord": "Gm6", "chordSet": [7, 10, 2, 4], "dimChord": "F♯°7", "dimSet": [6, 9, 0, 3] },
+          "bass": 0,
+          "littleChord": "Gm6",
+          "implied": "C9 / C13(♯11) via borrowing",
+          "scaleOverRoot": [0, 2, 3, 4, 6, 7, 9, 10],
+          "chordScale": "G melodic minor over C = C Lydian dominant; Gm6 is the important minor of C7"
+        }
+      ]
+    },
+    {
+      "symbol": "C7sus / C9sus",
+      "options": [
+        {
+          "pair": { "kind": "major6", "chordChord": "B♭6", "chordSet": [10, 2, 5, 7], "dimChord": "A°7", "dimSet": [9, 0, 3, 6] },
+          "bass": 0,
+          "littleChord": "B♭6",
+          "implied": "C9sus",
+          "scaleOverRoot": [0, 2, 3, 5, 6, 7, 9, 10],
+          "chordScale": "B♭ major bebop over C; sus color (4 replaces 3)"
+        }
+      ]
+    },
+    {
+      "symbol": "C7♭9",
+      "options": [
+        {
+          "pair": { "kind": "dim-dim", "chordChord": "E°7", "chordSet": [4, 7, 10, 1], "dimChord": "D°7-family neighbor", "dimSet": [3, 6, 9, 0] },
+          "bass": 0,
+          "littleChord": "E°7",
+          "implied": "C7(♭9)",
+          "scaleOverRoot": [0, 1, 3, 4, 6, 7, 9, 10],
+          "chordScale": "E°7 = rootless C7♭9 (dim on the 3rd). Full dim-dim pair = C half-whole diminished"
+        }
+      ]
+    },
+    {
+      "symbol": "C13(♭9♯9)",
+      "options": [
+        {
+          "pair": { "kind": "dim-dim", "chordChord": "B♭°7", "chordSet": [10, 1, 4, 7], "dimChord": "A°7", "dimSet": [9, 0, 3, 6] },
+          "bass": 0,
+          "littleChord": "B♭°7 (= E°7, inversion-equivalent)",
+          "implied": "C13(♭9♯9)",
+          "scaleOverRoot": [0, 1, 3, 4, 6, 7, 9, 10],
+          "chordScale": "Two neighboring dim7s over C = C half-whole diminished scale"
+        }
+      ]
+    },
+    {
+      "symbol": "C7alt",
+      "options": [
+        {
+          "pair": { "kind": "minor6", "chordChord": "D♭m6", "chordSet": [1, 4, 8, 10], "dimChord": "C°7", "dimSet": [0, 3, 6, 9] },
+          "bass": 0,
+          "littleChord": "D♭m6",
+          "implied": "C7(♭13♭9)",
+          "scaleOverRoot": [0, 1, 3, 4, 6, 8, 9, 10],
+          "chordScale": "D♭ melodic minor over C = C altered scale (♭ii m6 a half step above the root)"
+        },
+        {
+          "pair": { "kind": "as-is", "chordChord": "C7♯5", "chordSet": [0, 4, 8, 10], "dimChord": null, "dimSet": null },
+          "bass": 0,
+          "littleChord": "C7(♯5)",
+          "implied": "C7(♯5)",
+          "scaleOverRoot": [0, 2, 4, 6, 8, 10],
+          "chordScale": "Whole tone"
+        },
+        {
+          "pair": { "kind": "as-is", "chordChord": "C7♭5", "chordSet": [0, 4, 6, 10], "dimChord": null, "dimSet": null },
+          "bass": 0,
+          "littleChord": "C7(♭5)",
+          "implied": "C7(♭5)",
+          "scaleOverRoot": [0, 2, 4, 6, 8, 10],
+          "chordScale": "Whole tone / Lydian dominant ♭5 color"
+        }
+      ]
+    },
+    {
+      "symbol": "C°7",
+      "options": [
+        {
+          "pair": { "kind": "dim-dim", "chordChord": "C°7", "chordSet": [0, 3, 6, 9], "dimChord": "B°7", "dimSet": [11, 2, 5, 8] },
+          "bass": 0,
+          "littleChord": "C°7",
+          "implied": "C°7 (with available tensions from neighbor dim)",
+          "scaleOverRoot": [0, 2, 3, 5, 6, 8, 9, 11],
+          "chordScale": "Whole-half diminished: a dim7 pairs with its neighboring dim7 and gets its own rail"
+        }
+      ]
+    }
+  ]
+}

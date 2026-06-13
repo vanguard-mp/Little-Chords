@@ -1,0 +1,41 @@
+{
+  "_about": "Mini cadences: tonic/dominant alternation generated over static harmony using little chords over alternate bass notes. Roman numerals are relative to the prevailing key; 'rh/bass' means RH little chord over LH bass. Examples in B♭ major.",
+  "slashTable": [
+    { "rh": "I6",     "bass": "I",  "implies": "I6",        "exampleBb": "B♭6/B♭" },
+    { "rh": "V6",     "bass": "I",  "implies": "Imaj9",     "exampleBb": "F6/B♭" },
+    { "rh": "IV6",    "bass": "V",  "implies": "V7sus",     "exampleBb": "E♭6/F" },
+    { "rh": "IV6",    "bass": "ii", "implies": "iim7",      "exampleBb": "E♭6/C" },
+    { "rh": "vii°7",  "bass": "V",  "implies": "V7♭9",      "exampleBb": "A°7/F" },
+    { "rh": "iim6",   "bass": "V",  "implies": "V9",        "exampleBb": "Cm6/F" },
+    { "rh": "♭vim6",  "bass": "V",  "implies": "V7(♭13♭9)", "exampleBb": "G♭m6/F" },
+    { "rh": "ivm6",   "bass": "ii", "implies": "iim7♭5",    "exampleBb": "Fm6/D" },
+    { "rh": "V6",     "bass": "iii","implies": "iiim7",     "exampleBb": "F6/D" }
+  ],
+  "wheel": {
+    "_about": "Home/away cycle. Roman numerals refer to the RH little chord. ♭iii°7 and ♯iv°7 are inversions of i°7. Walking clockwise generates I–VI–ii–V-type motion over a static tonic area.",
+    "major": {
+      "home": ["I6", "V6 (over I bass)"],
+      "away": ["IV6 (over V or ii bass)"],
+      "toAway": ["♯i°7", "i°7 (≡ ♭iii°7)", "♭viim6", "VI7♭5", "VI7♯5"],
+      "toHome": ["vii°7", "i°7 (≡ ♯iv°7)", "♭vim6", "V7♭5", "V7♯5"]
+    },
+    "minor": {
+      "home": ["im6 (also V6 or I6 colors over i bass)"],
+      "away": ["ivm6 (≈ IV6 slot)"],
+      "toAway": ["♯i°7", "i°7", "♭viim6", "VI7♭5", "VI7♯5"],
+      "toHome": ["vii°7", "i°7", "♭vim6", "V7♭5", "V7♯5"]
+    }
+  },
+  "passingDiminished": {
+    "♯i°7": "implies VI7♭9 → pushes to ii (away)",
+    "vii°7": "implies V7♭9 → pushes home",
+    "i°7": "moves both directions; spelled ♭iii°7 leaving home, ♯iv°7 returning"
+  },
+  "bridgeFormula": {
+    "_about": "For a cycle of dominants (e.g. rhythm-changes bridge), alternate the important minor with its same-root diminished over each dominant bass: vm6/X7 → v°7/X7 creates X9 → X7♭9 pulling to the next dominant.",
+    "exampleBbBridge": [
+      "Am6/D", "A°7/D", "Dm6/G", "D°7/G", "Gm6/C", "G°7/C", "Cm6/F", "C°7/F"
+    ]
+  },
+  "generatorContract": "miniCadence(key, mode, bars) returns a sequence of {rhLittleChord, bass, impliedSymbol} alternating home and away states connected by passing chords, never leaving the tonic area unless asked."
+}

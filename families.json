@@ -1,0 +1,60 @@
+{
+  "_about": "The three diminished pitch-class sets and their families. Lowering any one note of a dim7 by a half step yields a dominant 7th (a 'brother'); raising any one note yields a minor 6th (the 'important minor' of one of the brothers). Each m6 is the m6 built on the 5th of its paired dominant (rootless 9th). Pitch classes: C=0.",
+  "families": [
+    {
+      "dimSet": [0, 3, 6, 9],
+      "dimNames": ["C°7", "E♭°7", "G♭°7", "A°7"],
+      "brothers": [
+        { "dominant": "B7", "loweredNote": 0, "importantMinor": "F♯m6" },
+        { "dominant": "D7", "loweredNote": 3, "importantMinor": "Am6" },
+        { "dominant": "F7", "loweredNote": 6, "importantMinor": "Cm6" },
+        { "dominant": "A♭7", "loweredNote": 9, "importantMinor": "E♭m6" }
+      ],
+      "raisings": [
+        { "raisedNote": 0, "yields": "F♯m6" },
+        { "raisedNote": 3, "yields": "Am6" },
+        { "raisedNote": 6, "yields": "Cm6" },
+        { "raisedNote": 9, "yields": "E♭m6" }
+      ]
+    },
+    {
+      "dimSet": [1, 4, 7, 10],
+      "dimNames": ["C♯°7", "E°7", "G°7", "B♭°7"],
+      "brothers": [
+        { "dominant": "C7", "loweredNote": 1, "importantMinor": "Gm6" },
+        { "dominant": "E♭7", "loweredNote": 4, "importantMinor": "B♭m6" },
+        { "dominant": "G♭7", "loweredNote": 7, "importantMinor": "D♭m6" },
+        { "dominant": "A7", "loweredNote": 10, "importantMinor": "Em6" }
+      ],
+      "raisings": [
+        { "raisedNote": 1, "yields": "Gm6" },
+        { "raisedNote": 4, "yields": "B♭m6" },
+        { "raisedNote": 7, "yields": "D♭m6" },
+        { "raisedNote": 10, "yields": "Em6" }
+      ]
+    },
+    {
+      "dimSet": [2, 5, 8, 11],
+      "dimNames": ["D°7", "F°7", "A♭°7", "B°7"],
+      "brothers": [
+        { "dominant": "D♭7", "loweredNote": 2, "importantMinor": "A♭m6" },
+        { "dominant": "E7", "loweredNote": 5, "importantMinor": "Bm6" },
+        { "dominant": "G7", "loweredNote": 8, "importantMinor": "Dm6" },
+        { "dominant": "B♭7", "loweredNote": 11, "importantMinor": "Fm6" }
+      ],
+      "raisings": [
+        { "raisedNote": 2, "yields": "A♭m6", "set": [3, 5, 8, 11] },
+        { "raisedNote": 5, "yields": "Bm6", "set": [2, 6, 8, 11] },
+        { "raisedNote": 8, "yields": "Dm6", "set": [2, 5, 9, 11] },
+        { "raisedNote": 11, "yields": "Fm6", "set": [0, 2, 5, 8] }
+      ]
+    }
+  ],
+  "invariants": [
+    "The three dimSets partition all 12 pitch classes.",
+    "Brothers within a family are a minor-3rd cycle (tritone subs are family-internal swaps).",
+    "Every dominant's {3,5,♭7,♭9} equals its family dimSet.",
+    "importantMinor(X7) = m6 on the 5th of X7 = rootless X9.",
+    "Raising note n of a dimSet yields the important minor of the brother obtained by lowering that same note n."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "_about": "Inversion identities: the same four notes named from two different roots. Intervals in semitones from the first chord's root to the second's.",
+  "identities": [
+    { "rule": "X6 = (X+9)m7", "example": "C6 = Am7", "sets": [0, 4, 7, 9] },
+    { "rule": "Xm6 = (X+9)m7♭5", "example": "Cm6 = Am7♭5", "sets": [0, 3, 7, 9] },
+    { "rule": "Xm7 = (X+3)6", "example": "Cm7 = E♭6", "sets": [0, 3, 7, 10] },
+    { "rule": "Xm7♭5 = (X+3)m6", "example": "Cm7♭5 = E♭m6", "sets": [0, 3, 6, 10] },
+    { "rule": "X°7 = (X+3)°7 = (X+6)°7 = (X+9)°7", "example": "C°7 = E♭°7 = G♭°7 = A°7", "sets": [0, 3, 6, 9] }
+  ],
+  "consequences": [
+    "m7 chords ride the rail of their relative major 6th (E♭6 rail for Cm7).",
+    "m7♭5 chords ride the rail of their relative minor 6th (E♭m6 rail for Cm7♭5).",
+    "A V6 little chord over the iii bass = iiim7 (F6/D = Dm7 in B♭)."
+  ]
+}

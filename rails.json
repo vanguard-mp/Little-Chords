@@ -1,0 +1,52 @@
+{
+  "_about": "Harmonized 6th-diminished scales ('rails'). Eight stations alternate the pair's two chords through their inversions. MIDI voicings listed bottom-up, ascending from C4=60. drop2 = close voicing with the 2nd-from-top voice dropped one octave.",
+  "rails": [
+    {
+      "name": "C major 6th-diminished",
+      "pair": ["C6", "B°7 (≡ D°7/F°7/A♭°7)"],
+      "scale": ["C", "D", "E", "F", "G", "A♭", "A", "B"],
+      "scalePc": [0, 2, 4, 5, 7, 8, 9, 11],
+      "stations": [
+        { "step": 1, "chord": "C6",    "close": [60, 64, 67, 69], "drop2": [55, 60, 64, 69] },
+        { "step": 2, "chord": "D°7",   "close": [62, 65, 68, 71], "drop2": [56, 62, 65, 71] },
+        { "step": 3, "chord": "C6/E",  "close": [64, 67, 69, 72], "drop2": [57, 64, 67, 72] },
+        { "step": 4, "chord": "F°7",   "close": [65, 68, 71, 74], "drop2": [59, 65, 68, 74] },
+        { "step": 5, "chord": "C6/G",  "close": [67, 69, 72, 76], "drop2": [60, 67, 69, 76] },
+        { "step": 6, "chord": "A♭°7",  "close": [68, 71, 74, 77], "drop2": [62, 68, 71, 77] },
+        { "step": 7, "chord": "C6/A",  "close": [69, 72, 76, 79], "drop2": [64, 69, 72, 79] },
+        { "step": 8, "chord": "B°7",   "close": [71, 74, 77, 80], "drop2": [65, 71, 74, 80] }
+      ]
+    },
+    {
+      "name": "C minor 6th-diminished",
+      "pair": ["Cm6", "B°7 (≡ D°7/F°7/A♭°7)"],
+      "scale": ["C", "D", "E♭", "F", "G", "A♭", "A", "B"],
+      "scalePc": [0, 2, 3, 5, 7, 8, 9, 11],
+      "stations": [
+        { "step": 1, "chord": "Cm6",    "close": [60, 63, 67, 69] },
+        { "step": 2, "chord": "D°7",    "close": [62, 65, 68, 71] },
+        { "step": 3, "chord": "Cm6/E♭", "close": [63, 67, 69, 72] },
+        { "step": 4, "chord": "F°7",    "close": [65, 68, 71, 74] },
+        { "step": 5, "chord": "Cm6/G",  "close": [67, 69, 72, 75] },
+        { "step": 6, "chord": "A♭°7",   "close": [68, 71, 74, 77] },
+        { "step": 7, "chord": "Cm6/A",  "close": [69, 72, 75, 79] },
+        { "step": 8, "chord": "B°7",    "close": [71, 74, 77, 80] }
+      ]
+    }
+  ],
+  "borrowingExamples": [
+    {
+      "_about": "Borrowing the top voice: play the station's lower three voices with the top voice taken from the NEXT station, then resolve it down a step. Suspended chord → resolved chord, on the C major rail, station 1.",
+      "station": 1,
+      "suspended": [60, 67, 69, 77],
+      "resolved": [60, 67, 69, 76],
+      "suspendedQuality": "C6sus4-flavor (borrowed F)",
+      "note": "Borrowed notes may also remain unresolved for a modern color."
+    }
+  ],
+  "invariants": [
+    "Diatonic 4-note chords on a rail produce only the pair's two chords, alternating.",
+    "Consecutive stations share zero common tones and every voice moves by step.",
+    "drop2(inversion k of X) contains the same pitch classes as inversion k close."
+  ]
+}
